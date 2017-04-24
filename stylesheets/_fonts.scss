@@ -1,0 +1,64 @@
+$rubik: "Rubik", sans-serf;
+@mixin rubik-n4 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: $rubik;
+}
+@mixin rubik-n7 {
+  font-style: normal;
+  font-weight: 700;
+  font-family: $rubik;
+}
+@mixin rubik-n9 {
+  font-style: normal;
+  font-weight: 900;
+  font-family: $rubik;
+}
+@mixin rubik-i4 {
+  font-style: italic;
+  font-weight: 400;
+  font-family: $rubik;
+}
+@mixin rubik-i7 {
+  font-style: italic;
+  font-weight: 700;
+  font-family: $rubik;
+}
+@mixin rubik-i9 {
+  font-style: italic;
+  font-weight: 900;
+  font-family: $rubik;
+}
+
+
+$playfair: "Playfair Display", serf;
+@mixin playfair-n4 {
+  font-style: normal;
+  font-weight: 400;
+  font-family: $playfair;
+}
+@mixin playfair-n7 {
+  font-style: normal;
+  font-weight: 700;
+  font-family: $playfair;
+}
+@mixin playfair-n9 {
+  font-style: normal;
+  font-weight: 900;
+  font-family: $playfair;
+}
+@mixin playfair-i4 {
+  font-style: italic;
+  font-weight: 400;
+  font-family: $playfair;
+}
+@mixin playfair-i7 {
+  font-style: italic;
+  font-weight: 700;
+  font-family: $playfair;
+}
+@mixin playfair-i9 {
+  font-style: italic;
+  font-weight: 900;
+  font-family: $playfair;
+}
