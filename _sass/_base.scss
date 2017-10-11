@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  color: $color-text;
+  @include ligatures;
+  @include rubik-n4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+// Resets margins and paddings
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  @include swashes;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+body {
+  background: $color-bg;
+}
+
+#main {
+  margin-top: 2rem;
+
+  @media (min-width: 600px) {
+    margin-top: 3rem;
+  }
+}
+
+::selection {
+  background: $color-textSelection;
+}
+::-moz-selection {
+  background: $color-textSelection;
+}

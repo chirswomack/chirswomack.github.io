@@ -1,0 +1,78 @@
+.greeting-hi {
+  @include t5;
+  margin-top: 2rem;
+
+  @media (min-width: 600px) {
+    @include t4;
+    margin-top: 3rem;
+  }
+}
+
+.greeting-name {
+  @include playfair-n9;
+  @include t3;
+
+  @media (min-width: 600px) {
+    @include t1;
+  }
+}
+
+.labels {
+  @include t6;
+  @include playfair-n4;
+
+  @media (min-width: 600px) {
+    @include t4;
+    margin: -8px 0 0 0;
+  }
+}
+
+.blurb {
+  @include t6;
+  margin-top: 1.5rem;
+  line-height: $lineHeight-base;
+
+  @media (min-width: 600px) {
+    @include t5;
+    margin-top: 2rem;
+  }
+}
+
+.blurb hr {
+  width: 3rem;
+  height: 4px;
+  background: $brand-pink;
+  outline: 0;
+  margin: 0;
+  border: none;
+}
+
+.disclaimer {
+  color: $brand-pink;
+  @include s1;
+  margin: 3.5rem 0 8px 0;
+
+  @media (min-width: 600px) {
+    @include t6;
+  }
+}
+
+.journalLink {
+  @include t6;
+  @include playfair-n7;
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border 0.15s ease-out;
+  border-bottom: 0 solid $color-linkUnderline;
+
+  @media (min-width: 600px) {
+    @include t5;
+  }
+}
+
+.journalLink:hover,
+.journalLink:focus {
+  border-bottom: 4px solid $color-linkUnderline;
+}

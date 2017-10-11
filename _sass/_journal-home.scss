@@ -1,0 +1,80 @@
+.journalHeader {
+  margin: 3rem 14rem;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.journalHeader-title {
+  @include t2;
+  @include playfair-i9;
+}
+
+.journalHeader-subtitle {
+  @include playfair-i4;
+  @include t3;
+  margin-left: 2rem;
+}
+
+.journalGrid {
+  @include clearfix;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.postWrap {
+  @include gridItem;
+  margin-bottom: 2rem;
+
+  @media (min-width: 600px) {
+    width: percentage(6/8);
+  }
+
+  @media (min-width: 900px) {
+    width: percentage(3/8);
+  }
+}
+
+.sidebar {
+  @include gridItem;
+  height: 100vh;
+
+  @media (min-width: 600px) {
+    width: percentage(1/8);
+  }
+}
+
+.o-postPreview-date {
+  @include t5;
+  margin: 0 0 2px 0;
+  color: $color-text--lighter;
+}
+
+.o-postPreview-title {
+  @include playfair-n7;
+  @include t3;
+  margin: 0;
+  line-height: $lineHeight-tight;
+}
+
+.o-postPreview-lede {
+  @include t5;
+  line-height: $lineHeight-base;
+  margin: 1.5rem 0 0 0;
+}
+
+.o-postPreview {
+  padding: 2rem;
+  transition: box-shadow 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1rem $brand-pink;
+  }
+}
+
+.o-postPreview:hover .o-postPreview-title {
+  color: $brand-pink;
+}

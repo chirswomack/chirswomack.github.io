@@ -1,0 +1,34 @@
+.o-link {
+  border-bottom: 1px solid $color-linkUnderline;
+  box-shadow: inset 0 -4px 0 $color-linkUnderline;
+  transition: background 0.3s ease-out;
+}
+
+.o-link:hover,
+.o-link:focus {
+  background: $color-linkUnderline;
+}
+
+.o-homeLink {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+}
+
+.o-teacup {
+  height: 1.75rem;
+
+  @media (min-width: 600px) {
+    height: 2.5rem;
+  }
+}
+
+.o-teacup--home {
+  @media (min-width: 600px) {
+    margin-left: -1rem;
+  }
+}
+
+.o-asterisk {
+  color: $brand-pink;
+}
